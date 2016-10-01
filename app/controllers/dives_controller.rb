@@ -1,7 +1,7 @@
 class DivesController < ApplicationController
 
   def index
-  #   @dives = User.dives
+    @dives = User.dives
   end
 
   def show
