@@ -1,0 +1,13 @@
+<h1>Dives</h1>
+
+<ul>
+  <% unless @dives.empty? %>
+    <%= @dives.each do |dive| %>
+      <li>
+        <%= link_to dive.name, dife_path(dive) %>
+        <p>Latitude: <%= dive.latitude %>, Longitude: <%= dive.longitude %></p>
+        <p><%= dive.time %></p>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
