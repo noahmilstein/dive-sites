@@ -15,6 +15,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'shoulda'
   gem 'valid_attribute'
+  gem 'foundation-rails'
 end
 
 group :test do

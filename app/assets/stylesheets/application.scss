@@ -1,2 +1,20 @@
-// @import "*";
 
+.main {
+  width: 75%;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.login {
+  // position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+  float: center;
+  // vertical-align: middle;
+  // display: inline-block;
+  // margin: auto;
+}

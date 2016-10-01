@@ -1,3 +1,4 @@
+<h1>Find Dive Sites</h1>
 <%= form_tag(search_users_path, method: "get") do %>
   <%= label_tag(:latitude, "Latitude") %>
   <%= text_field_tag(:latitude) %>
@@ -7,9 +8,12 @@
   <%= text_field_tag(:radius) %>
   <%= submit_tag("Search") %>
 <% end %>
-
+<br/>
+<h1>Results</h1>
 <% @results.each do |site| %>
-  <li>Name: <%= site['name'] %></li>
-  <li>Lat: <%= site['lat'] %></li>
-  <li>Lng: <%= site['lng'] %></li>
+  <div class="callout">
+    <li>Name: <%= site['name'] %></li>
+    <li>Lat: <%= site['lat'] %></li>
+    <li>Lng: <%= site['lng'] %></li>
+  </div>
 <% end %>
