@@ -1,11 +1,7 @@
 class DivesController < ApplicationController
 
   def index
-    @dives = Dive.all
-  end
-
-  def new
-    @dive = Dive.new
+  #   @dives = User.dives
   end
 
   def show
@@ -18,6 +14,10 @@ class DivesController < ApplicationController
 
   def update
     @dive = Dive.find(params[:id])
+  end
+
+  def new
+    @dive = Dive.new
   end
 
   def create
