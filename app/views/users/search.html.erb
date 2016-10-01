@@ -1,0 +1,15 @@
+<%= form_tag(search_users_path, method: "get") do %>
+  <%= label_tag(:latitude, "Latitude") %>
+  <%= text_field_tag(:latitude) %>
+  <%= label_tag(:longitude, "Longitude") %>
+  <%= text_field_tag(:longitude) %>
+  <%= label_tag(:radius, "Radius") %>
+  <%= text_field_tag(:radius) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<% @results.each do |site| %>
+  <li>Name: <%= site['name'] %></li>
+  <li>Lat: <%= site['lat'] %></li>
+  <li>Lng: <%= site['lng'] %></li>
+<% end %>
